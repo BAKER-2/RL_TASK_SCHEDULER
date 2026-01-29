@@ -1,0 +1,13 @@
+workload,metric,winner
+uniform,avg_waiting_time_mean,SJF
+uniform,deadline_miss_rate_mean,SJF
+uniform,throughput_mean,FCFS
+bursty,avg_waiting_time_mean,SJF
+bursty,deadline_miss_rate_mean,SJF
+bursty,throughput_mean,FCFS
+heavy_tailed,avg_waiting_time_mean,SJF
+heavy_tailed,deadline_miss_rate_mean,SJF
+heavy_tailed,throughput_mean,FCFS
+deadline_constrained,avg_waiting_time_mean,SJF
+deadline_constrained,deadline_miss_rate_mean,SJF
+deadline_constrained,throughput_mean,FCFS

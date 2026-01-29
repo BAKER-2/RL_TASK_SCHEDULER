@@ -1,0 +1,30 @@
+
+# =========================
+# GLOBAL PROJECT CONFIG
+# =========================
+
+# Dataset sizes
+N_TRAIN_TASKS = 1000
+N_EVAL_TASKS = 2000
+N_SEEDS = 3
+SEEDS = [0, 1, 2]
+
+# RL state
+TOP_K = 5
+
+# Reward weights
+REWARD_COMPLETE = 1.0
+REWARD_WAITING_PENALTY = 0.01
+REWARD_DEADLINE_MISS = 1.0
+
+# DQN hyperparameters
+GAMMA = 0.99
+LEARNING_RATE = 1e-3
+BATCH_SIZE = 64
+REPLAY_BUFFER_SIZE = 50_000
+EPS_START = 1.0
+EPS_END = 0.05
+TARGET_UPDATE_STEPS = 500
+
+# Round Robin
+RR_QUANTUM = 1

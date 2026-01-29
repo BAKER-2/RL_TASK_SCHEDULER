@@ -1,0 +1,5 @@
+workload,n_tasks,arrival_span,ptime_mean,ptime_max,slack_mean,slack_min
+uniform,2000,4864,5.4505,10,24.966,10
+bursty,2000,1977,6.4095,12,18.943,8
+heavy_tailed,2000,3674,3.7365,32,29.876,10
+deadline_constrained,2000,3055,5.5075,10,8.999,3

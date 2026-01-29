@@ -1,0 +1,37 @@
+DISCUSSION BULLETS (AUTO-GENERATED FROM RESULTS)
+
+Overall observations:
+
+- For Average waiting time, the most frequent best-performing scheduler across workloads was SJF (wins in 4/4 workloads).
+- For Deadline miss rate, the most frequent best-performing scheduler across workloads was SJF (wins in 4/4 workloads).
+- For Throughput, the most frequent best-performing scheduler across workloads was FCFS (wins in 4/4 workloads).
+
+Key interpretation points (report-ready):
+
+- SJF often achieves the best average waiting time in this simulator because task processing times are known exactly, and SJF is well-known to be near-optimal for minimizing mean waiting time under such assumptions.
+- The RL-based scheduler (DQN) optimizes cumulative reward rather than directly minimizing average waiting time; therefore, matching (rather than surpassing) SJF is expected unless the reward is explicitly aligned with SJF’s objective.
+- EDF typically performs strongly on deadline miss rate in deadline-constrained workloads because it prioritizes tasks with the earliest deadlines, which directly targets the miss-rate objective.
+- The RL scheduler’s comparable performance to classical baselines indicates that it learned stable scheduling behavior without relying on fixed hand-crafted rules.
+- Mixed results across workloads are scientifically valid and support the study’s aim: understanding when learning-based scheduling can approximate or complement traditional heuristics.
+
+Per-workload highlights:
+
+- Workload: uniform
+  - Best for Average waiting time (lower is better): SJF
+  - Best for Deadline miss rate (lower is better): SJF
+  - Best for Throughput (higher is better): FCFS
+
+- Workload: bursty
+  - Best for Average waiting time (lower is better): SJF
+  - Best for Deadline miss rate (lower is better): SJF
+  - Best for Throughput (higher is better): FCFS
+
+- Workload: heavy_tailed
+  - Best for Average waiting time (lower is better): SJF
+  - Best for Deadline miss rate (lower is better): SJF
+  - Best for Throughput (higher is better): FCFS
+
+- Workload: deadline_constrained
+  - Best for Average waiting time (lower is better): SJF
+  - Best for Deadline miss rate (lower is better): SJF
+  - Best for Throughput (higher is better): FCFS

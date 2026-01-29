@@ -1,0 +1,17 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Colab junk
+.config/
+sample_data/
+
+# Large artifacts (uncomment if you do NOT want to push models)
+# *.pt
+# *.pth
+# *.ckpt
+# *.pkl
