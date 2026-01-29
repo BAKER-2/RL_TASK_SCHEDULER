@@ -2,6 +2,7 @@
 
 This repository contains a discrete-time single-processor task scheduling simulator and a comparative evaluation of classical scheduling algorithms against a Deep Reinforcement Learning approach (DQN).
 
+
 ## Compared methods
 - FCFS (First-Come First-Served)
 - RR (Round Robin, quantum = 1)
