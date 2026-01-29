@@ -23,9 +23,9 @@ This repository contains a discrete-time single-processor task scheduling simula
 ## Repository structure
 - `notebooks/` : End-to-end experiment pipeline in Colab
 - `results/`   : Figures and tables used in the report
-- `report/`    : IEEE-format LaTeX report files
-- `models/`    : Saved trained model checkpoints (if included)
-- `src/`       : Core simulator / agent code (if separated)
+- `report/`    : IEEE-format report file
+- `models/`    : Saved trained model checkpoints
+- `src/`       : Core simulator / agent code
 
 ## How to run (Google Colab)
 Open the notebooks in `notebooks/` and run them in order (setup → generation → training → evaluation → analysis).
